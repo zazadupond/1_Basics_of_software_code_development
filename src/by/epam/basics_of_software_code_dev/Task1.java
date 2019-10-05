@@ -16,7 +16,7 @@ public class Task1 {
         int b = scan.nextInt();
         System.out.println("Input value c");
         int c = scan.nextInt();
-        
+
 
         System.out.println("Значение функции ( a - 3 ) * b / 2 ) + c будет равно " + ( (( a - 3 ) * b / 2 ) + c ));
     }
