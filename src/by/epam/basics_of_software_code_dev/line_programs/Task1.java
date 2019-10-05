@@ -5,7 +5,6 @@ import java.util.Scanner;
 // найдите значение функции: z = ( ( a - 3 ) * b / 2 ) + c
 public class Task1 {
 
-
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -16,7 +15,6 @@ public class Task1 {
         int b = scan.nextInt();
         System.out.println("Input value c");
         int c = scan.nextInt();
-
 
         System.out.println("Значение функции ( a - 3 ) * b / 2 ) + c будет равно " + ( (( a - 3 ) * b / 2 ) + c ));
     }
