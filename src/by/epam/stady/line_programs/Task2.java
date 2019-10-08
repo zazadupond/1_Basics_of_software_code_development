@@ -21,7 +21,7 @@ class MathExpressionClass {
                 + (4 * variableA * variableC))))
                 / (2 * variableA))
                 - ((variableA * variableA * variableA) * variableC)
-                + Math.pow(variableB,-2); 
+                + Math.pow(variableB,-2);
 
         System.out.println(variableMathExpr);
 
