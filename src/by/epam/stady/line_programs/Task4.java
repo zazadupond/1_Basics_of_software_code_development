@@ -20,7 +20,7 @@ class Change {
 
         string_number = new StringBuffer(string_number).reverse().toString(); // создадим обьект StringBuffer спарамерами строки, перевернем,вызовем метод ля возврата строки.
 
-        System.out.println(string_number);
+        System.out.println(string_number );
 
     }
 }
