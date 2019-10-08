@@ -1,4 +1,4 @@
-package by.epam.basics_of_software_code_dev.line_programs;
+package by.epam.stady.line_programs;
 
 import java.util.Scanner;
 
