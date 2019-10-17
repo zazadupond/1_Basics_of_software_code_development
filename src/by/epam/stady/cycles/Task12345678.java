@@ -6,9 +6,11 @@ Task1 class SumOfNumbers - Напишите программу, где поль�
 Task2 class StepInterval Вычислить значение функции на отрезке[a, b] с шагом h.
 y = x, если x > 2 и y = -x, если x <= 2
 
-Task3 class SumOfSquares Найти сумму квадратов первых 100 чисел*/
+Task3 class SumOfSquares Найти сумму квадратов первых 100 чисел.
 
+Task4 class SquareMultiplication Составить программу нахождения произведения квадратов первых двухсот чисел.
 
+*/
 
 import java.util.Scanner;
 
@@ -18,7 +20,8 @@ public class Task12345678 {
 
         //SumOfNumbers.numberInput(); //Task1 start
         //StepInterval.lineFun(1,3,0.01);//Task2 start
-        SumOfSquares.sumSquares(3); //Task3 start
+        //SumOfSquares.sumSquares(3); //Task3 start
+        SquareMultiplication.squareMul(15.3);//Task4 start
     }
 }
 
@@ -49,7 +52,7 @@ class SumOfNumbers { //Task1
     }
 }
 
-class StepInterval {
+class StepInterval { //Task2
 
     public static void lineFun(double a, double b, double h) {
         double x, y;
@@ -68,7 +71,7 @@ class StepInterval {
     }
 }
 
-class SumOfSquares {
+class SumOfSquares { //Task3
 
     public static void sumSquares(int number) {
         int sum = 0;
@@ -76,5 +79,16 @@ class SumOfSquares {
             sum += number*number;
         }
         System.out.println(sum);
+    }
+}
+
+class SquareMultiplication { //Task4
+
+    public static void squareMul(double number) {
+        double totalSquare = 1;
+        for (int i = 0 ; i <= 2; i++ , number++) {
+            totalSquare *= number*number;
+        }
+        System.out.printf("%.5f ",totalSquare);
     }
 }
