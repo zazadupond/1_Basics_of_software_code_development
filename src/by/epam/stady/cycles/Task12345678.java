@@ -10,6 +10,7 @@ Task3 class SumOfSquares Найти сумму квадратов первых 1
 
 Task4 class SquareMultiplication Составить программу нахождения произведения квадратов первых двухсот чисел.
 
+Task4
 */
 
 import java.util.Scanner;
@@ -86,9 +87,10 @@ class SquareMultiplication { //Task4
 
     public static void squareMul(double number) {
         double totalSquare = 1;
-        for (int i = 0 ; i <= 2; i++ , number++) {
+        for (int i = 0 ; i <= 200; i++ , number++) {
             totalSquare *= number*number;
         }
         System.out.printf("%.5f ",totalSquare);
     }
 }
+
