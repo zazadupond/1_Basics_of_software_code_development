@@ -10,7 +10,17 @@ Task3 class SumOfSquares Найти сумму квадратов первых 1
 
 Task4 class SquareMultiplication Составить программу нахождения произведения квадратов первых двухсот чисел.
 
-Task4
+Task5 class NumberSeries Даны числовой ряд и некоторое число e. Найти сумму тех членов ряда,
+модуль которых больше или равен заданному e.
+Общий член ряда имеет вид: an = (1/2 в степени n) + (1/3 в степени n).
+
+Task6 Вывести на экран соответствий между символами и их численными обозначениями в памяти компьютера.
+
+Task7 Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
+m и n вводятся с клавиатуры.
+
+Task8 Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.
+
 */
 
 import java.util.Scanner;
@@ -22,7 +32,8 @@ public class Task12345678 {
         //SumOfNumbers.numberInput(); //Task1 start
         //StepInterval.lineFun(1,3,0.01);//Task2 start
         //SumOfSquares.sumSquares(3); //Task3 start
-        SquareMultiplication.squareMul(15.3);//Task4 start
+        //SquareMultiplication.squareMul(15.3);//Task4 start
+        NumberSeries.sumRow(0.0001 );
     }
 }
 
@@ -91,6 +102,20 @@ class SquareMultiplication { //Task4
             totalSquare *= number*number;
         }
         System.out.printf("%.5f ",totalSquare);
+    }
+}
+
+class NumberSeries { //Task5
+
+    public static void sumRow(double e) {
+
+        double sum = 0;
+        for (double n = 1; ((1/Math.pow(2,n)) + (1/Math.pow(3,n)))>= e; n++) {
+        sum += ((1/Math.pow(2,n)) + (1/Math.pow(3,n)));
+        }
+
+        System.out.println(sum);
+
     }
 }
 
