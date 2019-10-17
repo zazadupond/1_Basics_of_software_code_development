@@ -6,7 +6,7 @@ Task1 class SumOfNumbers - Напишите программу, где поль�
 Task2 class StepInterval Вычислить значение функции на отрезке[a, b] с шагом h.
 y = x, если x > 2 и y = -x, если x <= 2
 
-Task3 Найти сумму квадратов первых 100 чисел*/
+Task3 class SumOfSquares Найти сумму квадратов первых 100 чисел*/
 
 
 
@@ -17,7 +17,8 @@ public class Task12345678 {
     public static void main(String[] args) {
 
         //SumOfNumbers.numberInput(); //Task1 start
-        StepInterval.lineFun(1,3,0.01);//Task2 start
+        //StepInterval.lineFun(1,3,0.01);//Task2 start
+        SumOfSquares.sumSquares(3); //Task3 start
     }
 }
 
@@ -67,3 +68,13 @@ class StepInterval {
     }
 }
 
+class SumOfSquares {
+
+    public static void sumSquares(int number) {
+        int sum = 0;
+        for (int i = 0; i<= 100; i++ , number++) {
+            sum += number*number;
+        }
+        System.out.println(sum);
+    }
+}
