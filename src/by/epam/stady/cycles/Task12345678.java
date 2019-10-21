@@ -14,7 +14,8 @@ Task5 class NumberSeries Даны числовой ряд и некоторое 
 модуль которых больше или равен заданному e.
 Общий член ряда имеет вид: an = (1/2 в степени n) + (1/3 в степени n).
 
-Task6 Вывести на экран соответствий между символами и их численными обозначениями в памяти компьютера.
+Task6 class NumberSymbol Вывести на экран соответствий между
+символами и их численными обозначениями в памяти компьютера.
 
 Task7 Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
 m и n вводятся с клавиатуры.
@@ -32,8 +33,9 @@ public class Task12345678 {
         //SumOfNumbers.numberInput(); //Task1 start
         //StepInterval.lineFun(1,3,0.01);//Task2 start
         //SumOfSquares.sumSquares(3); //Task3 start
-        //SquareMultiplication.squareMul(15.3);//Task4 start
-        NumberSeries.sumRow(0.0001 );
+        //SquareMultiplication.squareMul(15.3); //Task4 start
+        //NumberSeries.sumRow(0.0001 ); //Task5 start
+        //NumberSymbol.numberSymbol(); //Task6 start
     }
 }
 
@@ -118,4 +120,14 @@ class NumberSeries { //Task5
 
     }
 }
+
+class NumberSymbol {
+    public static void numberSymbol() {
+        for (short i = -32768; i < 32767; i++) {
+            System.out.printf("%s %c \n", Integer.toBinaryString(i), (char)i);
+        }
+    }
+}
+
+
 
