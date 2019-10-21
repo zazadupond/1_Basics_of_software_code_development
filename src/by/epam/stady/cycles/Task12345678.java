@@ -36,6 +36,7 @@ public class Task12345678 {
         //SquareMultiplication.squareMul(15.3); //Task4 start
         //NumberSeries.sumRow(0.0001 ); //Task5 start
         //NumberSymbol.numberSymbol(); //Task6 start
+        DivisorsOfNaturalNumber.divNatNumb(-15,16); //Task7 start
     }
 }
 
@@ -121,7 +122,7 @@ class NumberSeries { //Task5
     }
 }
 
-class NumberSymbol {
+class NumberSymbol { //Task6
     public static void numberSymbol() {
         for (short i = -32768; i < 32767; i++) {
             System.out.printf("%s %c \n", Integer.toBinaryString(i), (char)i);
@@ -129,5 +130,20 @@ class NumberSymbol {
     }
 }
 
+class DivisorsOfNaturalNumber { //Task7
+    public static void divNatNumb(int m, int n) {
 
+        for (int i = m ;i<=n;i++){
+            if (i > 0) {
+                System.out.print(i +" ");
+                for (int j = 2; j < i; j++ ) {
+                    if (i % j == 0){
+                        System.out.print(i / j + " ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+}
 
