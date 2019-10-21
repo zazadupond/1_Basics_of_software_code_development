@@ -36,7 +36,7 @@ public class Task12345678 {
         //SquareMultiplication.squareMul(15.3); //Task4 start
         //NumberSeries.sumRow(0.0001 ); //Task5 start
         //NumberSymbol.numberSymbol(); //Task6 start
-        DivisorsOfNaturalNumber.divNatNumb(-15,16); //Task7 start
+        //DivisorsOfNaturalNumber.divNatNumb(-15,16); //Task7 start
     }
 }
 
