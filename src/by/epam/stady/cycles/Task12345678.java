@@ -24,6 +24,9 @@ Task8 Даны два числа. Определить цифры, входящ�
 
 */
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Task12345678 {
@@ -36,7 +39,7 @@ public class Task12345678 {
         //SquareMultiplication.squareMul(15.3); //Task4 start
         //NumberSeries.sumRow(0.0001 ); //Task5 start
         //NumberSymbol.numberSymbol(); //Task6 start
-        //DivisorsOfNaturalNumber.divNatNumb(-15,16); //Task7 start
+        //DivisorsOfNaturalNumber.divNatNumb(); //Task7 start
     }
 }
 
@@ -131,7 +134,26 @@ class NumberSymbol { //Task6
 }
 
 class DivisorsOfNaturalNumber { //Task7
-    public static void divNatNumb(int m, int n) {
+
+    public static void divNatNumb() {
+        int m = 0;
+        int n = 0;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            System.out.println("Для каждого натурального числа в промежутке от m до n вывести все делители");
+
+            System.out.print("Введите m :");
+            m = Integer.parseInt(reader.readLine());
+
+            System.out.print("Введите n :");
+            n = Integer.parseInt(reader.readLine());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
 
         for (int i = m ;i<=n;i++){
             if (i > 0) {
