@@ -40,6 +40,7 @@ public class Task12345678 {
         //NumberSeries.sumRow(0.0001 ); //Task5 start
         //NumberSymbol.numberSymbol(); //Task6 start
         //DivisorsOfNaturalNumber.divNatNumb(); //Task7 start
+        EqualsNumber.equalsNumber(123456, 654321987); //Task8 start
     }
 }
 
@@ -164,6 +165,24 @@ class DivisorsOfNaturalNumber { //Task7
                     }
                 }
                 System.out.println();
+            }
+        }
+    }
+}
+
+class EqualsNumber { //Task8
+
+    public static void equalsNumber(int number1, int number2) {
+        String num1 = String.valueOf(number1);
+        String num2 = String.valueOf(number2);
+        System.out.print("содержит одинаковие цифры : ");
+
+        for (int x = 0 ; x < num1.length(); x++){
+
+            for (int j = 0; j < num2.length(); j++) {
+                if (num1.charAt(x) == num2.charAt(j)) {
+                    System.out.print(num1.charAt(x));
+                }
             }
         }
     }
